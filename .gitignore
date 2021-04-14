@@ -1,0 +1,7 @@
+buildroot/*
+config/*
+docker/*
+docs/*
+ini/*
+Marlin/src/*
+Marlin/lib/*
