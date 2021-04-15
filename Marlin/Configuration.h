@@ -1060,11 +1060,11 @@
  *   E |  2        | I <-- Example "2" ( left-,  back+)
  *   F |[-]  N  [+]| G <-- Nozzle
  *   T |       3   | H <-- Example "3" (right+, front-)
- *     | 4         | T <-- Example "4" ( left-, front-)
+ *     | 4         | T <-- Example "4" ( left-, front-) - THIS IS THE CASE WITH ENDER 3
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -39,-12, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1363,9 +1363,9 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
-#define MESH_BED_LEVELING
+// #define MESH_BED_LEVELING
 
 /**
  * Normally G28 leaves leveling disabled on completion. Enable one of
